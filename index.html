@@ -3,30 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TITLE</title>
+    <title>InClassAssgn2</title>
 
-    <!-- Link to css file -->
-    <link rel="stylesheet" href="./css/NAME.css" />
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- Import for boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <!-- Link to JS file -->
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <!-- Begin header content -->
-    <header></header>
-    <!-- End header content -->
-
     <!-- Begin main content -->
     <main>
-      <h1>Hello World!</h1>
+      <div class="container">
+        <span>Welcome to the Interactive ABCs of CSS Technology learning Website</span>
+        <span>Click on the buttons below to reveal and learn the CSS technology features of the corresponding letters</span>
+        <div class="letters">
+          <div class="letter1">
+            <div class="pic" id="A-pic">
+              <img src="./assets/img/css-letter-a.png" alt="A is for aspect-ratio" />
+              <button onclick="hideA()" class="hide-btn">Hide Result</button>
+            </div>
+            <button onclick="clickBtnA()" class="A-btn" id="A-btn">A</button>
+          </div>
+          <div class="letter2">
+            <div class="pic" id="B-pic">
+              <img src="./assets/img/css-letter-b.png" alt="B is for border" />
+              <button onclick="hideB()" class="hide-btn">Hide Result</button>
+            </div>
+            <button onclick="clickBtnB()" class="B-btn" id="B-btn">B</button>
+          </div>
+          <div class="letter3">
+            <div class="pic" id="C-pic">
+              <img src="./assets/img/css-letter-c.png" alt="C is for colors" />
+              <button onclick="hideC()" class="hide-btn">Hide Result</button>
+            </div>
+            <button onclick="clickBtnC()" class="C-btn" id="C-btn">C</button>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- End main content -->
-
-    <!-- Begin footer content -->
-    <footer class="footer"></footer>
-    <!-- End footer content -->
   </body>
 </html>

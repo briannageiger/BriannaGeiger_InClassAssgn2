@@ -1,0 +1,73 @@
+/* Import font styling from google fonts - src: fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f4a633;
+  padding: 10px;
+  margin: 10px;
+}
+
+.container span {
+  border: 1px solid #f4a633;
+  margin-bottom: 10px;
+  font-size: 22px;
+  width: 95vw;
+  text-align: center;
+  padding: 18px;
+}
+
+.letters {
+  display: flex;
+  margin-top: 10px;
+}
+
+.letter1,
+.letter2 {
+  margin-right: 17vw;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f4a633;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
+.hide-btn {
+  margin: 15px;
+  border: #444240;
+  background-color: #3583bb;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.A-btn,
+.B-btn,
+.C-btn {
+  font-size: 22px;
+  border: 1px solid #f4a633;
+  padding: 10px 70px;
+  background-color: #ffffff;
+  margin-left: 25%;
+  transition: all 0.5s ease;
+}
+
+.A-btn:hover,
+.B-btn:hover,
+.C-btn:hover,
+.hide-btn:hover {
+  cursor: pointer;
+}
